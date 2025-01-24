@@ -1,12 +1,15 @@
 import customtkinter as ctk
 from tkinter import messagebox
 from app import iniciar_programa_principal
+from banco import criar_banco_usuarios 
 
-ctk.set_appearance_mode("System")
+ctk.set_appearance_mode("light")
 ctk.set_default_color_theme("blue")
 
 USUARIO_VALIDO = "admin"
 SENHA_VALIDA = "12345"
+
+criar_banco_usuarios()
 
 def verificar_login():
     usuario = entrada_usuario.get()
